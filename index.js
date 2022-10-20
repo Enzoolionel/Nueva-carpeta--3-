@@ -147,12 +147,46 @@
 
 // !EJERCICIO N°11
 
-const factorial = (numero) => {
-    let facorial = 1;
-    for (let i = numero; i > 1; i--) {
-        facorial *= i
+// const factorial = (numero) => {
+//     let facorial = 1;
+//     for (let i = numero; i > 1; i--) {
+//         facorial *= i
+//     }
+//     return console.log(`el ${numero} es factorial de ${facorial}`)
+// }
+
+// factorial(4)
+// !-----------------------
+
+// !EJERCICIO N°12
+
+// const lista = ['enzo', 'lionel', 'peralta']
+
+// let cambio = []
+
+// lista.forEach((nombre, posision) => {
+//     cambio[posision] = nombre
+// });
+
+// console.log(cambio)
+// console.log(lista)
+
+// let segundaLista = [...lista]
+
+// console.log(segundaLista)
+
+
+const sumarTodos = (numeros) => {
+    let suma = 0
+
+    for (let i = 1; i <= numeros; i++) {
+        suma += i
     }
-    return console.log(`el ${numero} es factorial de ${facorial}`)
+    return console.log(suma)
 }
 
-factorial(4)
+
+sumarTodos(300)
+sumarTodos(129)
+sumarTodos(53)
+sumarTodos(41)
